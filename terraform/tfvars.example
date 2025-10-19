@@ -1,0 +1,2 @@
+project_id          = "your-gcp-project-id"
+deployer_user_email = "user@example.com"
