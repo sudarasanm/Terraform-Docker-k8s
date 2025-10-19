@@ -222,12 +222,12 @@ You can then access your application at `https://wobot.example.com`.
 
 ### **Summary of Our Journey**
 
-1.  We started by defining all our cloud resources in **Terraform** code.
-2.  We hit several **quota limits** with the GCP free tier, which we solved by adjusting our resource sizes and configurations.
-3.  We ran into a **Terraform state issue** (`deletion_protection`) which we solved by manually deleting the broken GKE cluster with `gcloud` commands, allowing Terraform to start fresh.
-4.  We then created simple **Flask** and **Nginx** applications and wrote **Dockerfiles** to containerize them, optimizing them with multi-stage builds and non-root users.
-5.  We pushed these container images to our private **Artifact Registry**.
-6.  We wrote **Kubernetes manifest files** to define how our application should run, be exposed, and scale on GKE.
-7.  We deployed the application with **`kubectl`** and ran into an `ImagePullBackOff` error, which we fixed by granting the correct **IAM permissions** to the GKE nodes.
+1.  I started by defining all our cloud resources in **Terraform** code.
+2.  I hit several **quota limits** with the GCP free tier, which we solved by adjusting our resource sizes and configurations.
+3.  I ran into a **Terraform state issue** (`deletion_protection`) which we solved by manually deleting the broken GKE cluster with `gcloud` commands, allowing Terraform to start fresh.
+4.  I then created simple **Flask** and **Nginx** applications and wrote **Dockerfiles** to containerize them, optimizing them with multi-stage builds and non-root users.
+5.  I pushed these container images to our private **Artifact Registry**.
+6.  I wrote **Kubernetes manifest files** to define how our application should run, be exposed, and scale on GKE.
+7.  I deployed the application with **`kubectl`** and ran into an `ImagePullBackOff` error, which we fixed by granting the correct **IAM permissions** to the GKE nodes.
 8.  Finally, we installed **cert-manager** and configured our **Ingress** to automatically handle **TLS (HTTPS)**, completing all the core technical requirements of the assignment.
 
