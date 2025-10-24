@@ -1,4 +1,4 @@
-# Terrraform + Docker + k8s
+# Wobot-Assignment
 
 This project demonstrates a complete CI/CD pipeline for a microservices application on Google Cloud Platform (GCP). It uses Terraform for infrastructure provisioning, Docker for containerization, and Google Kubernetes Engine (GKE) for orchestration.
 
